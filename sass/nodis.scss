@@ -1,11 +1,12 @@
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
+
 @import 'base/base';
 @import 'base/animations';
 @import 'base/typography';
 @import 'base/utilities';
-@import 'layout/header';
+
 @import 'components/button';
 @import 'components/card';
 @import 'components/images';
@@ -13,5 +14,9 @@
 @import 'components/feature-box';
 @import 'components/video';
 @import 'components/story';
+
+@import 'layout/header';
 @import 'layout/gridtest';
+@import 'layout/footer';
+
 @import 'pages/home';
