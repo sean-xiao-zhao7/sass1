@@ -19,8 +19,8 @@
         <div class="menu">
             <input type="checkbox" class="menu__checkbox" id="menu-toggle" />
             <label for="menu-toggle" class="menu__hamburger-container"
-                ><span class="menu__hamburger"></span></label
-            >
+                ><span class="menu__hamburger"></span
+            ></label>
             <div class="menu__background">&nbsp;</div>
             <nav class="menu__list-container">
                 <ul class="menu__list">
@@ -31,7 +31,9 @@
                         <a href="#" class="menu__list-link">For you</a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="#" class="menu__list-link">Popular tours</a>
+                        <a href="#section-tours" class="menu__list-link"
+                            >Popular tours</a
+                        >
                     </li>
                     <li class="menu__list-item">
                         <a href="#" class="menu__list-link">Stories</a>
@@ -171,7 +173,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary u-margin-bottom-mid">
                         Most popular packages
@@ -212,7 +214,9 @@
                                             <div class="card__back--price--2">
                                                 $12,399
                                             </div>
-                                            <a href="#" class="btn btn--white"
+                                            <a
+                                                href="#popup"
+                                                class="btn btn--white"
                                                 >Join now!</a
                                             >
                                         </div>
@@ -255,7 +259,9 @@
                                             <div class="card__back--price--2">
                                                 $22,399
                                             </div>
-                                            <a href="#" class="btn btn--white"
+                                            <a
+                                                href="#popup"
+                                                class="btn btn--white"
                                                 >Join now!</a
                                             >
                                         </div>
@@ -298,7 +304,9 @@
                                             <div class="card__back--price--2">
                                                 $14,399
                                             </div>
-                                            <a href="#" class="btn btn--white"
+                                            <a
+                                                href="#popup"
+                                                class="btn btn--white"
                                                 >Join now!</a
                                             >
                                         </div>
@@ -501,6 +509,33 @@
                     </div>
                 </div>
             </footer>
+            <div class="popup" id="popup">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="img/nat-8.jpg" alt="" class="popup__img" />
+                        <img src="img/nat-9.jpg" alt="" class="popup__img" />
+                    </div>
+                    <div class="popup__right">
+                        <a href="#section-tours" class="popup__close"
+                            >&times;</a
+                        >
+                        <h2 class="heading-secondary u-margin-bottom-small">
+                            Book now!
+                        </h2>
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            Important &ndash; See terms.
+                        </h3>
+                        <p class="popup__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eos harum sequi, similique tempora rem
+                            obcaecati doloremque magni minima illo at cupiditate
+                            ducimus asperiores laboriosam architecto quaerat
+                            placeat exercitationem, nisi dolores.
+                        </p>
+                        <a href="#" class="btn btn--green">Go</a>
+                    </div>
+                </div>
+            </div>
         </main>
     </body>
 </html>
