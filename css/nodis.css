@@ -7,9 +7,22 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 @keyframes move-from-left {
   0% {
@@ -32,8 +45,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -47,6 +59,10 @@ body {
     letter-spacing: 3.5rem;
     animation: move-from-left 0.5s ease;
     animation-delay: 0.2s; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -54,6 +70,9 @@ body {
     letter-spacing: 1.7rem;
     animation: move-from-left 0.5s ease;
     animation-delay: 0.2s; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3rem;
@@ -65,6 +84,12 @@ body {
   color: transparent;
   transition: all .2s;
   letter-spacing: 2px; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -425,6 +450,9 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); } }
 
 .header__logo-box {
   position: absolute;
@@ -446,6 +474,13 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 5rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 3rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -454,6 +489,13 @@ body {
     float: left; }
     .row [class^='col']:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^='col']:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 3rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^='col'] {
+        width: 100% !important; } }
   .row .col1of2 {
     width: calc((100% - 6rem) / 2); }
   .row .col1of3 {
@@ -469,6 +511,9 @@ body {
   background-color: #363636;
   padding: 10rem 0;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-container {
     text-align: center;
     margin-bottom: 8rem; }
@@ -479,6 +524,10 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__menu-container {
+        width: 100%;
+        text-align: center; } }
   .footer__menu {
     list-style: none; }
   .footer__menu-item {
@@ -502,6 +551,10 @@ body {
     display: inline-block;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        text-align: center; } }
 
 .menu {
   background-color: #fafafa; }
@@ -524,6 +577,10 @@ body {
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
     transition: all .3s;
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .menu__hamburger-container {
+        top: 4.5rem;
+        right: 4.5rem; } }
   .menu__hamburger-container:hover, .menu__hamburger-container:active {
     cursor: pointer; }
   .menu__hamburger-container:active {
@@ -558,6 +615,10 @@ body {
     right: 6.5rem;
     background-image: radial-gradient(#7ed56fc2, #28b485bf);
     z-index: 1000; }
+    @media (max-width: 56.25em) {
+      .menu__background {
+        top: 4.5rem;
+        right: 4.5rem; } }
   .menu__list-container {
     height: 100vh;
     width: 100%;

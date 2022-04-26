@@ -26,6 +26,11 @@
         box-shadow: $box-shadow-1;
         transition: all .3s;
         text-align: center;
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
     }
 
     &__hamburger-container:hover,
@@ -84,6 +89,11 @@
         right: 6.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
     }
 
     &__list-container {
