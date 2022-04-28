@@ -43,13 +43,14 @@ section.book {
 }
 
 div.book {
-    background-image: linear-gradient(105deg, rgba(white, .9) 0, rgba(white, .9) 90%, transparent 90%), url(../img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba(white, .9) 0, rgba(white, .9) 50%, transparent 50%), url(../img/nat-10.jpg);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: $box-shadow-1;
 
     @include respond(tab-land) {
         background-size: cover;
+        background-image: linear-gradient(105deg, rgba(white, .9) 0, rgba(white, .9) 90%, transparent 90%), url(../img/nat-10.jpg);
     }
 
     &__form {
